@@ -1,0 +1,30 @@
+# Environment files
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build artifacts
+dist/
+dist-ssr/
+public/build/
+public/hot/
+public/storage/
+
+# Cache and logs
+*.log
+logs/
+.phpunit.cache/
+.phpunit.result.cache/
+storage/logs/*.log
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.idea/
+*.local
+config.bat

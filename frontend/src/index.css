@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-maroon-50: #fefce8;
+  --color-maroon-100: #fef9c3;
+  --color-maroon-200: #fef08a;
+  --color-maroon-300: #fde047;
+  --color-maroon-400: #facc15;
+  --color-maroon-500: #eab308;
+  --color-maroon-600: #ca8a04;
+  --color-maroon-700: #a16207;
+  --color-maroon-800: #854d0e;
+  --color-maroon-900: #713f12;
+  --color-maroon-950: #422006;
+
+  --color-amber-50: #fefce8;
+  --color-amber-100: #fef9c3;
+  --color-amber-200: #fef08a;
+  --color-amber-300: #fde047;
+  --color-amber-400: #facc15;
+  --color-amber-500: #eab308;
+  --color-amber-600: #ca8a04;
+  --color-amber-700: #a16207;
+  --color-amber-800: #854d0e;
+  --color-amber-900: #713f12;
+  --color-amber-950: #422006;
+}
+
+:root {
+  --color-primary: #eab308;
+  --color-primary-hover: #ca8a04;
+  --color-primary-glow: rgba(234, 179, 8, 0.35);
+  font-size: 14px; /* Proportionate 100% desktop scaling */
+}
+
+/* Base Body: Rich Dark Grey (Client Requirements) */
+body,
+html body,
+html.dark body,
+html:not(.dark) body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #0b0f19 !important;
+  color: #f8fafc !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eab308;
+}
+
+/* Refined Subtle Glows */
+.yellow-glow,
+.maroon-glow {
+  box-shadow: 0 4px 20px -2px rgba(234, 179, 8, 0.35);
+}
+
+.yellow-border-glow,
+.maroon-border-glow {
+  border-color: rgba(234, 179, 8, 0.45);
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.25);
+}
+
+/* Leaflet Container */
+.leaflet-container {
+  font-family: inherit;
+  border-radius: 1rem;
+  z-index: 0 !important;
+}
+
+/* Natural Bright Map Tiles */
+.leaflet-tile {
+  filter: none !important;
+}
